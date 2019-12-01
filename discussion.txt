@@ -1,0 +1,101 @@
+Discussion
+----------
+
+1. Which would be the most efficient data structure for a data set with the
+   following requirements:
+
+  - frequently removing and adding items to the beginning of the data structure
+
+  - frequently removing and adding items to the end of the data structure
+
+  - rarely indexing and searching
+
+  A. A Python list 
+  B. Singly linked list 
+  C. Doubly linked list
+
+  Explain your answer.
+
+  For this function, I would recommend using a linked list. Removing and adding from the beggining of a python list would both be a runtime of O(n). While for linked list it would be O(1). For adding and removing from the end of the list a pythong list would be O(1) and linked list for removing would be O(n) and for adding it would be O(1). So, taking all these runtimes into consideration linked list would return a runtime of O(n) while python list would have a runtime of O(n2). 
+
+
+2. Which would be the most efficient data structure for a data set with the
+   following requirements:
+
+  - order is unimportant
+
+  -frequently adding and removing items
+
+  - frequently looking up items
+
+  A. A Python list  
+  B. A Dictionary  
+  C. Deque  
+  D. Binary Search Tree
+
+  Explain your answer.
+
+  The best option for this functionality would be to use a dictionary since every runtime for each of these would have to be O(1). A python list total runtime would be O(n2) and linkes list would be O(n). A binary tree would only be efficient for when you are searching for an item but not for adding, removing, or unordered. 
+
+
+
+
+
+
+
+
+3. Explain why looking up, adding elements, and removing elements from a dictionary or hash map are all O(1) operations.
+
+This is because dictionaties have key/value pairs and so when you are retriving a an item by its key it is very fast has a hashmap is implemented. The hash map allows key:value pairs to be inserted and stored in order and to be accesed regardless if it has several items. It does not iterate through the dictionary everytime it has to look for an item you can just access this by the key making the runtime O(1). 
+
+
+4. Explain why removing elements from or adding elements to an arbitrary location in a Python list are O(n) operations.
+
+When you are looking for that item you will have to iterate through the list and then remove the item. After you do this every item in the list has to be shifted by one index making the runtime of O(n). 
+
+
+5. What is the correct runtime for:
+
+  - Bubble Sort?
+  O(n2)
+
+  - Quicksort?
+  O(n log n)
+
+  - Merge Sort?
+  O(n log n)
+
+  - Insertion Sort?
+  O(n2)
+
+
+6. What is the difference between a tree and a graph?
+
+Graphs are like trees but with cycles that can show undirected or directed relationships. Trees have a hierarchy while graphs do not. All trees are graphs but not all graphs are trees. Graphs are used to model relationships while trees are used to show structures represented by parent and children. 
+
+
+7. Using the Python implementation of Quicksort from the instructions:
+
+  Given the list [8, 4, 1, 6, 5, 2, 7, 3]:
+  When this function is initially called, what are the values of:
+
+    - lst - [8, 4, 1, 6, 5, 2, 7, 3]
+
+    - pivot - [6]
+
+    - lo - [4, 1, 5, 2, 3]
+
+    - hi - [8, 7]
+
+
+
+  When the quicksort is first called recursively on the `lo` list, what are the
+  values of:
+
+  - lst - [4, 1, 5, 2, 3]
+
+  - pivot - [5]
+
+  - lo - [4, 1, 2, 3]
+
+  - hi - []
