@@ -30,11 +30,15 @@ class Node(object):
         cherry
 
         """
+        current = self
+        print(current.data)
 
-        # TODO: Complete this method
-        # pass
+        if current.next == None: 
+            return 
+        else: 
+            current.next.traverse_recursively()
 
-
+    
 #####################################################################
 # END OF ASSIGNMENT: You can ignore everything below.
 
